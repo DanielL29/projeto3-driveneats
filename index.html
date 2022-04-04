@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:wght@100;300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Driven Eats</title>
+  </head>
+
+  <body>
+    <header>
+      <div>
+        <h1>DrivenEats</h1>
+        <h2>Sua comida em 6 minutos</h2>
+      </div>
+    </header>
+    <main>
+      <div>
+        <div class="food-title">
+          <h3>Primeiro, seu prato</h3>
+        </div>
+        <div class="food-categories">
+          <div class="food-cards food">
+            <div         
+              class="food-box"
+              onclick="changeSelection(this, 'food')"
+            >
+              <div class="food-card">
+                <img
+                  src="/images/frango-yin-yang.png"
+                  alt="frango-yin-yang"
+                />
+                <div class="food-content">
+                  <h4>Frango Yin Yang</h4>
+                  <p>Um pouco de batata, um pouco de salada</p>
+                  <div class="food-price">
+                    <div>
+                      <h5>R$</h5>
+                      <h5>14,90</h5>
+                    </div>
+                    <ion-icon name="checkmark-circle"></ion-icon>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="food-box"
+              onclick="changeSelection(this, 'food')"
+            >
+              <div class="food-card">
+                <img
+                  src="/images/parrilha.jpg"
+                  alt="parrilha"
+                />
+                <div class="food-content">
+                  <h4>Parrilha</h4>
+                  <p>Carne, batatas e molho</p>
+                  <div class="food-price">
+                    <div>
+                      <h5>R$</h5>
+                      <h5>19,90</h5>
+                    </div>
+                    <ion-icon name="checkmark-circle"></ion-icon>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div  
+              class="food-box"
+              onclick="changeSelection(this, 'food')"
+            >
+              <div class="food-card">
+                <img
+                  src="/images/prato-feito.jpg"
+                  alt="prato-feito"
+                />
+                <div class="food-content">
+                  <h4>Prato feito</h4>
+                  <p>Arroz, feijão, ovo, calabresa e legumes</p>
+                  <div class="food-price">
+                    <div>
+                      <h5>R$</h5>
+                      <h5>12,45</h5>
+                    </div>
+                    <ion-icon name="checkmark-circle"></ion-icon>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div   
+              class="food-box"
+              onclick="changeSelection(this, 'food')"
+            >
+              <div class="food-card">
+                <img
+                  src="/images/pizza.png"
+                  alt="pizza"
+                />
+                <div class="food-content">
+                  <h4>Pizza</h4>
+                  <p>Pizza tradicional</p>
+                  <div class="food-price">
+                    <div>
+                      <h5>R$</h5>
+                      <h5>23,67</h5>
+                    </div>
+                    <ion-icon name="checkmark-circle"></ion-icon>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="food-box"
+              onclick="changeSelection(this, 'food')"
+            >
+              <div class="food-card">
+                <img
+                  src="/images/hamburguer.jpg"
+                  alt="hamburguer"
+                />
+                <div class="food-content">
+                  <h4>Hamburguer</h4>
+                  <p>Hamburguer tradicional</p>
+                  <div class="food-price">
+                    <div>
+                      <h5>R$</h5>
+                      <h5>32,34</h5>
+                    </div>
+                    <ion-icon name="checkmark-circle"></ion-icon>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="food-title">
+          <h3>Agora, sua bebida</h3>
+        </div>
+        <div class="food-categories">
+          <div class="food-cards drink">
+            <div
+              class="food-box"
+              onclick="changeSelection(this, 'drink')"
+            >
+              <div class="food-card">
+                <img 
+                  src="/images/coca.jpg" 
+                  alt="coca"
+                />
+                <div class="food-content">
+                  <h4>Coca-cola</h4>
+                  <p>Coca Lata de 350ml</p>
+                  <div class="food-price">
+                    <div>
+                      <h5>R$</h5>
+                      <h5>5,00</h5>
+                    </div>
+                    <ion-icon name="checkmark-circle"></ion-icon>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="food-box"
+              onclick="changeSelection(this, 'drink')"
+            >
+              <div class="food-card">
+                <img
+                  src="/images/agua.jpg"
+                  alt="agua"
+                />
+                <div class="food-content">
+                  <h4>Agua mineral</h4>
+                  <p>Agua mineral 500ml</p>
+                  <div class="food-price">
+                    <div>
+                      <h5>R$</h5>
+                      <h5>2,00</h5>
+                    </div>
+                    <ion-icon name="checkmark-circle"></ion-icon>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="food-box"
+              onclick="changeSelection(this, 'drink')"
+            >
+              <div class="food-card">
+                <img
+                  src="/images/pepsi-black.jpg"
+                  alt="pepsi-black"
+                />
+                <div class="food-content">
+                  <h4>Pepsi Black</h4>
+                  <p>Pepsi Black Lata de 350ml</p>
+                  <div class="food-price">
+                    <div>
+                      <h5>R$</h5>
+                      <h5>5,00</h5>
+                    </div>
+                    <ion-icon name="checkmark-circle"></ion-icon>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="food-box"
+              onclick="changeSelection(this, 'drink')"
+            >
+              <div class="food-card">
+                <img
+                  src="/images/guarana.jpg"
+                  alt="guarana"
+                />
+                <div class="food-content">
+                  <h4>Guarana Antartica</h4>
+                  <p>Guarana Antartica 2L</p>
+                  <div class="food-price">
+                    <div>
+                      <h5>R$</h5>
+                      <h5>7,00</h5>
+                    </div>
+                    <ion-icon name="checkmark-circle"></ion-icon>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="food-box"
+              onclick="changeSelection(this, 'drink')"
+            >
+              <div class="food-card">
+                <img
+                  src="/images/suco.jpg"
+                  alt="suco"
+                />
+                <div class="food-content">
+                  <h4>Suco de Laranja</h4>
+                  <p>Suco de laranja 500ml</p>
+                  <div class="food-price">
+                    <div>
+                      <h5>R$</h5>
+                      <h5>8,50</h5>
+                    </div>
+                    <ion-icon name="checkmark-circle"></ion-icon>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="food-title">
+          <h3>Por fim, sua sobremesa</h3>
+        </div>
+        <div class="food-categories">
+          <div class="food-cards dessert">
+            <div 
+              class="food-box" 
+              onclick="changeSelection(this, 'dessert')"
+            >
+              <div class="food-card">
+                <img
+                  src="/images/bolo-chocolate-morango.jpg"
+                  alt="bolo-chocolate-morango"
+                />
+                <div class="food-content">
+                  <h4>Bolo de Chocolate</h4>
+                  <p>Fatia de bolo de chocolate com cobertura de morango</p>
+                  <div class="food-price">
+                    <div>
+                      <h5>R$</h5>
+                      <h5>6,45</h5>
+                    </div>
+                    <ion-icon name="checkmark-circle"></ion-icon>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div 
+              class="food-box" 
+              onclick="changeSelection(this, 'dessert')"
+            >
+              <div class="food-card">
+                <img
+                  src="/images/petit-gateau.jpg"
+                  alt="petit-gateau"
+                />
+                <div class="food-content">
+                  <h4>Petit Gateau</h4>
+                  <p>Petit gateau, bola de sorvete de creme e causa de caramelo</p>
+                  <div class="food-price">
+                    <div>
+                      <h5>R$</h5>
+                      <h5>26,70</h5>
+                    </div>
+                    <ion-icon name="checkmark-circle"></ion-icon>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div 
+              class="food-box" 
+              onclick="changeSelection(this, 'dessert')"
+            >
+              <div class="food-card">
+                <img
+                  src="/images/torta-limao.jpg"
+                  alt="torta-limao"
+                />
+                <div class="food-content">
+                  <h4>Torta de Limão</h4>
+                  <p>Fatia de torta de limão cremosa</p>
+                  <div class="food-price">
+                    <div>
+                      <h5>R$</h5>
+                      <h5>5,20</h5>
+                    </div>
+                    <ion-icon name="checkmark-circle"></ion-icon>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div 
+              class="food-box" 
+              onclick="changeSelection(this, 'dessert')"
+            >
+              <div class="food-card">
+                <img
+                  src="/images/milkshake.jpg"
+                  alt="milkshake"
+                />
+                <div class="food-content">
+                  <h4>Milk Shake</h4>
+                  <p>Milk shake de oreo</p>
+                  <div class="food-price">
+                    <div>
+                      <h5>R$</h5>
+                      <h5>12,60</h5>
+                    </div>
+                    <ion-icon name="checkmark-circle"></ion-icon>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div 
+              class="food-box" 
+              onclick="changeSelection(this, 'dessert')"
+            >
+              <div class="food-card">
+                <img 
+                  src="/images/pudim.png" 
+                  alt="pudim" 
+                />
+                <div class="food-content">
+                  <h4>Pudim</h4>
+                  <p>Fatia de pudim gelado</p>
+                  <div class="food-price">
+                    <div>
+                      <h5>R$</h5>
+                      <h5>4,78</h5>
+                    </div>
+                    <ion-icon name="checkmark-circle"></ion-icon>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div>
+        <button class="order-disabled">
+          <span>Selecione os 3 itens para fechar o pedido</span>
+        </button>
+        <button class="end-order" onclick="orderButton()">Fechar pedido</button>
+      </div>
+    </footer>
+
+    <div class="order-screen">
+      <div class="order-box">
+        <div class="order-title">
+          <h2>Confirme seu pedido</h2>
+        </div>
+        <div class="order-content">
+          <div class="food-orders">
+            <p></p>
+            <p></p>
+          </div>
+          <div class="food-orders">
+            <p></p>
+            <p></p>
+          </div>
+          <div class="food-orders">
+            <p></p>
+            <p></p>
+          </div>
+          <div class="order-total">
+            <p></p>
+            <p></p>
+          </div>
+        </div>
+        <div class="order-buttons">
+          <button class="send-order" onclick="sendOrder()">Tudo certo, pode pedir!</button>
+          <button class="cancel-order" onclick="cancelOrder()">Cancelar</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
