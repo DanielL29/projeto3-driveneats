@@ -6,6 +6,7 @@ function changeSelection(food, category) {
     if(selected !== null) {
         selected.classList.remove('selected')
     } else {
+        qtd === "2" ? orderDisabled.innerHTML = `${orderDisabled.innerHTML.replace(`os ${qtd} itens`, `mais ${Number(qtd - 1).toString()} item`)}` :
         orderDisabled.innerHTML = `${orderDisabled.innerHTML.replace(qtd, Number(qtd - 1).toString())}`
     }
     food.classList.add('selected')
@@ -54,8 +55,7 @@ function sendOrder() {
 - Prato: ${foodOrders[0].firstElementChild.textContent} 
 - Bebida: ${foodOrders[1].firstElementChild.textContent}
 - Sobremesa: ${foodOrders[2].firstElementChild.textContent}
-Total: R$ ${Number(orderTotal.lastElementChild.textContent.split(' ')[1].replace(',', '.')).toFixed(2)}
-
+Total: R$ ${Number(orderTotal.lastElementChild.textContent.split(' ')[1].replace(',', '.')).toFixed(2)}\n
 Nome: ${name}
 Endereço: ${address}`
     
